@@ -109,6 +109,11 @@
             echo "DATA CANNOT BE ENTERED";
     }
 ?>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"  type="text/css"> 
+    </head>
+</html>
 <!---
 <!doctype html>
 <html lang="en">

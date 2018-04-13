@@ -22,9 +22,9 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <style type="text/css">
                     
-          .jumbotron{
-                background-image: url("https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1493787181/articles/2017/05/03/where-the-earth-s-forests-are-deadly-silent/170502-Shoumatoff-Dispatches-from-a-Vanishing-World-tease_lbgmsr");
-                background-repeat: no-repeat, cover;
+          .jumbotron, body{
+                background-image: url("https://i.pinimg.com/236x/b6/eb/36/b6eb361151b3020e5977492c7ef24768--tile-patterns-pretty-patterns.jpg");
+                background-repeat: repeat, cover;
                 }
       </style>
     <title>Enviroment Project</title>
@@ -61,9 +61,11 @@ session_start();
             <a class="btn btn-primary btn-lg" href="signup.php" role="button">Sign Up</a>
             </p>
       </div>
-      
-      
-      </div>
+          <div class="container-fluid" style="background-image: url('https://dontwasteurwaste.files.wordpress.com/2014/12/motherearth.jpg'); background-repeat: no repeat; background-size:cover">
+          
+          
+          </div>
+
       
       
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

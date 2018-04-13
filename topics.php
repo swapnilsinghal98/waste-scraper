@@ -30,7 +30,7 @@ else
     
     <div class='container-fluid' style='padding: 0'>
             <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-              <a class='navbar-brand' href='#'><img src='https://www.foei.org/wp-content/uploads/2013/07/indonesia-forest610259.jpg' style='width:50px; height:50px'></a>
+              <a class='navbar-brand' href='home.php'><img src='https://www.foei.org/wp-content/uploads/2013/07/indonesia-forest610259.jpg' style='width:50px; height:50px'></a>
               <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
               </button>
@@ -65,36 +65,46 @@ else
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="style.css"  type="text/css"> 
     <title>Add a topic</title>
   </head>
   <body>
   <div class="container-fluid" style="padding:0px; margin-top:10px">
-      <form  action="addtopic.php">
+      <form  action="addtopic.php" method="post" enctype="multipart/form-data" >
               <div class="form-group">
                 <label for="title">Title: </label>
-                <input type="text" class="form-control" class="sr-only" id="Title" aria-describedby="emailHelp" placeholder="Enter the type of problem ">
+                <input type="text" class="form-control" required name="title" aria-describedby="emailHelp" placeholder="Enter the type of problem ">
               </div>
               <div class="form-group">
                 <label for="desc">Description: </label>
-                  <textarea class="form-control" id="desc" placeholder="Describe your problem"></textarea>
+                  <textarea class="form-control" name="desc" required placeholder="Describe your problem"></textarea>
               </div>
 
               <div class="form-group">
                 <label for="image1">Add Image1:</label>
-                <input type="file" class="form-control-file" id="image1">
+                <input type="file" class="form-control-file" name="image1" id="image1" required>
               </div>
-
-              <div class="form-group">
-                <label for="image2">Add Image2</label>
-                <input type="file" class="form-control-file" id="image2">
-                </div>
                 <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" name="insert" id="insert">Insert</button>
                   </div>
     </form>
       </div>
     <!-- Optional JavaScript -->
+      <script>
+          $(document).ready(function(){
+              var extension = $('#image1').val().split('.').pop().toLowerCase();
+              var extension2 = $('#image2').val().split('.').pop().toLowerCase();
+              if(jQuery.inArray(extension, ['gif','png','jpg','jpeg'])== -1 && jQuery.inArray(extension, ['gif','png','jpg','jpeg'])== -1 )
+                  {
+                    alert('Invalid Image File');
+                      $('#image1').val('');
+                      $('#image2').val('');
+                      return false;
+                  }
+              
+              
+          })
+      </script>          
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>

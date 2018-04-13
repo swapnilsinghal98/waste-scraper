@@ -63,12 +63,16 @@ else
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"  type="text/css"> 
     </head>
     <body>
+        <div class="style">
         <button type="button" style="margin-top:20px" class="btn btn-outline-primary"><a href="joinateam.php" style="text-decoration:none">Join a Team</a></button>
         <button type="button"  style="margin-top:20px"class="btn btn-outline-primary"><a href="makeateam.php" style="text-decoration:none">Make a Team</a></button>
         <button type="button"  style="margin-top:20px"class="btn btn-outline-primary"><a href="topics.php" style="text-decoration:none">Add Your Query</a></button>
-
+        <button type="button"  style="margin-top:20px"class="btn btn-outline-primary"><a href="viewtopic.php" style="text-decoration:none">View Queries</a></button>
+        <button type="button"  style="margin-top:20px"class="btn btn-outline-primary"><a href="viewteam.php" style="text-decoration:none">View Teams</a></button>
+            </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

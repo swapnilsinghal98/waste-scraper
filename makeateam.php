@@ -30,7 +30,7 @@ else
     
     <div class='container-fluid' style='padding: 0'>
             <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
-              <a class='navbar-brand' href='#'><img src='https://www.foei.org/wp-content/uploads/2013/07/indonesia-forest610259.jpg' style='width:50px; height:50px'></a>
+              <a class='navbar-brand' href='home.php'><img src='https://www.foei.org/wp-content/uploads/2013/07/indonesia-forest610259.jpg' style='width:50px; height:50px'></a>
               <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                 <span class='navbar-toggler-icon'></span>
               </button>
@@ -64,15 +64,17 @@ else
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="style.css"  type="text/css"> 
+    
     <title>Team Builder</title>
   </head>
   <body>
   <div class="container-fluid" style="padding:0px; margin-top:10px">
     <div class="form-control">
-      <form action="home.php">
+      <form action="addteam.php" method="post">
               
                 <label for="title">Team Name: </label>
-                <input type="text" required class="form-control validate-input" name="team_name"  id="Title" aria-describedby="emailHelp" placeholder="Enter your team name ">
+                <input type="text" required class="form-control validate-input" name="team_name"  id="team_name" aria-describedby="emailHelp" placeholder="Enter your team name ">
             <div>
             <!--    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Email:</span>
@@ -87,18 +89,8 @@ else
                 <label for="desc">Description: </label>
                   <textarea required class="form-control validate-input" name="desc" placeholder="Describe your problem"></textarea>
               </div>
-
-              <div class="form-group validate-input">
-                <label for="image1">Add Image1:</label>
-                <input type="file" required class="form-control-file" name="image1">
-              </div>
-
-              <div class="form-group validate-input">
-                <label for="image2">Add Image2</label>
-                <input type="file" class="form-control-file" name="image2">
-                </div>
                 <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                   </div>
           
     </form>
