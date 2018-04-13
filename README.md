@@ -28,3 +28,6 @@ Functionalities Provided:
 7. Viewing of Teams: The user can also look at the teams that have been currently formed and registered on the website.  
  
 
+Instructio to Use:
+	
+Import the given .sql file into a database with name 'id5392371_enviroment' and keep all the files in a comman folder.
